@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoCart eccomerce website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="products-data.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>EcoCart <i class="fa-solid fa-leaf"></i></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="hero">
+                    <div class="hero-text">
+                        <h2>Fresh, Healthy Food Delivered To Your Door</h2>
+                        <p>Discover a world of nutritious and delicious organic food options that support your healthy lifestyle. From farm to table, we bring quality ingredients right to your doorstep.</p>
+                        <a href="shop.html" class="btn">Shop Now  <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images\Healthy Food.jpg" alt="Healthy Food">
+                    </div>
+                </div>
+                <div class="hor-divs">
+                    <div>
+                        <i class="fa-solid fa-cube"></i>
+                        <h2>Sustainable Packaging</h2>
+                        <p>Eco-friendly packaging solutions that minimize environmental impact.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>Quality Guaranteed</h2>
+                        <p>We carefully select all products to ensure premium quality and freshness.</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <h2>Fast Delivery</h2>
+                        <p>Quick and reliable delivery to ensure your food arrives fresh and on time.</p>
+                    </div>
+                </div>
+                <div class="featured-products">
+                    <h2>Featured Products</h2>
+                    <p>Discover our handpicked selection of healthy favorites</p>
+                    <div class="product-grid" id="featured-products">
+                        <!-- Products will be inserted here by JavaScript -->
+                    </div>
+                    <div class="category-grid">
+                        <h2>Shop By Category</h2>
+                        <p>Explore our wide selection of healthy food options</p>
+                        <div class="category-cards">
+                            <a href="shop.html?category=fruits" class="category-card">
+                                <img src="images\Fruits.jpg" alt="Fruits">
+                                <h3>Fruits</h3>
+                            </a>
+                            <a href="shop.html?category=vegetables" class="category-card">
+                                <img src="images\Vegetables.jpg" alt="Vegetables">
+                                <h3>Vegetables</h3>
+                            </a>
+                            <a href="shop.html?category=grains" class="category-card">
+                                <img src="images\Grains.jpg" alt="Grains">
+                                <h3>Grains</h3>
+                            </a>
+                            <a href="shop.html?category=nuts-seeds" class="category-card">
+                                <img src="images\Nuts & Seeds.jpg" alt="Nuts & Seeds">
+                                <h3>Nuts & Seeds</h3>
+                            </a>
+                            <a href="shop.html?category=dairy" class="category-card">
+                                <img src="images\Dairy.jpg" alt="Dairy">
+                                <h3>Dairy</h3>
+                            </a>
+                            <a href="shop.html?category=meat" class="category-card">
+                                <img src="images\Meat.jpg" alt="Meat">
+                                <h3>Meat</h3>
+                            </a>
+                        </div>
+                        <a href="shop.html" class="btn">View All Categories</a>
+                    </div>
+                    <div class="reviews">
+                        <h2>Customer Reviews</h2>
+                        <p>See what our happy customers are saying about us!</p>
+                        <div class="reviews-container">
+                            <div class="review-card">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <p>"I've been ordering from EcoCart for months now and the quality is consistently excellent. Their organic produce has transformed my eating habits!"</p>
+                                <h3>Sarah Johnson</h3>
+                                <p>Fitness Coach</p>
+                            </div>
+                            <div class="review-card">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <p>"The variety of organic options available is impressive. Delivery is always on time and customer service is top-notch. Highly recommend!"</p>
+                                <h3>Michael Thompson</h3>
+                                <p>Nutrition Expert</p>
+                            </div>
+                            <div class="review-card">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <p>"As someone with specific dietary needs, finding EcoCart was a game-changer. Their detailed product information and quality are unmatched."</p>
+                                <h3>Emily Rodriguez</h3>
+                                <p>Health Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with our latest products, healthy recipes, and exclusive offers.</p>
+                        <form action="#" method="post">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>        
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>EcoCart</h2>
+                    <p>Your destination for healthy, organic food options delivered right to your door.</p>
+                </div>
+                <div class="footer-categories">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#fruits">Fruits</a></li>
+                        <li><a href="#vegetables">Vegetables</a></li>
+                        <li><a href="#grains">Grains</a></li>
+                        <li><a href="#nuts-seeds">Nuts & Seeds</a></li>
+                        <li><a href="#dairy">Dairy</a></li>
+                        <li><a href="#meat">Meat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoCart. All rights reserved.</p>
+                <p>Designed by MercyAndati</p>
+            </div>
+        </footer>
+        <button id="back-to-top" class="back-to-top" onclick="ToTop()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </body>
+</html>

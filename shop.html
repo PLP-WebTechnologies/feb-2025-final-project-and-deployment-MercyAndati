@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - EcoCart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>EcoCart <i class="fa-solid fa-leaf"></i></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shop-main">
+        <section id="shop">
+            <h2>All Products</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="fruits">Fruits</button>
+                <button class="category-btn" data-category="vegetables">Vegetables</button>
+                <button class="category-btn" data-category="grains">Grains</button>
+                <button class="category-btn" data-category="nuts-seeds">Nuts & Seeds</button>
+                <button class="category-btn" data-category="dairy">Dairy</button>
+                <button class="category-btn" data-category="meat">Meat</button>
+            </div>
+            
+            <div class="products-container" id="products-container">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>EcoCart</h2>
+                <p>Your destination for healthy, organic food options delivered right to your door.</p>
+            </div>
+            <div class="foter-categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#fruits">Fruits</a></li>
+                    <li><a href="#vegetables">Vegetables</a></li>
+                    <li><a href="#grains">Grains</a></li>
+                    <li><a href="#nuts-seeds">Nuts & Seeds</a></li>
+                    <li><a href="#dairy">Dairy</a></li>
+                    <li><a href="#meat">Meat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EcoCart. All rights reserved.</p>
+            <p>Designed by MercyAndati</p>
+        </div>
+    </footer>
+    <button id="back-to-top" class="back-to-top" onclick="ToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
+    <script src="shop-script.js"></script>
+</body>
+</html>

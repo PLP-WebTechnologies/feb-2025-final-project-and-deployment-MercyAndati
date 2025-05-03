@@ -1,0 +1,73 @@
+# EcoCart - Organic E-Commerce Website
+
+A fully responsive e-commerce website for organic products, built with HTML, CSS, and JavaScript.
+
+## Features
+
+- **Product Catalog**: Browse products by category
+- **Shopping Cart**: Add/remove items, adjust quantities
+- **Responsive Design**: Works on all device sizes
+- **Product Details**: Detailed view with nutrition info
+- **Contact Form**: Customer communication
+- **About Page**: Company information
+
+## File Structure
+ecocart/
+- ├── index.html # Homepage
+- ├── shop.html # Product listing
+- ├── product.html # Single product view
+- ├── cart.html # Shopping cart
+- ├── about.html # About us page
+- ├── contact.html # Contact page
+- ├── styles.css # Main stylesheet
+- ├── script.js # Global JavaScript
+- ├── products-data.js # Product database
+- ├── cart.js # Cart functionality
+- ├── product.js # Product page scripts
+- ├── shop-script.js # Shop page scripts
+- ├── images/ # Product images
+- └── README.md # This file
+
+
+## Installation
+
+No installation required - just open `index.html` in a web browser.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Font Awesome (v6.4.0)
+- Google Fonts
+
+## Customization
+
+1. **Products**: Edit `products-data.js` to add/remove products
+2. **Styling**: Modify `styles.css` for visual changes
+3. **Business Info**: Update contact details in `contact.html`
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Known Issues
+
+- Cart persistence uses localStorage (clears when browser cache is cleared)
+- Checkout process is simulated (no real payment processing)
+
+## Future Improvements
+
+- User authentication system
+- Product search functionality
+- Payment gateway integration
+- Admin dashboard for product management
+
+## Credits
+
+- Designed by MercyAndati
+- Product images from pintrest
+- Icons by Font Awesome
